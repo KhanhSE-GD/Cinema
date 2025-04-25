@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">Theaters</a>
+                <a href="#" class="nav-link">Membership</a>
+                <a href="#" class="nav-link">My Ticket</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="sign-in">Sign In</a>
+                <a href="#" class="sign-up">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+<!-- Hero Slider -->
+<section class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide1">
+        <img src="image 3.png" alt="Dune Background" class="slide-bg">
+        <div class="slide-content">
+            <h1>DUNE</h1>
+            <p>The epic, emotional journey of Paul Atreides - a brilliant young man with a greater destiny 
+            than he can comprehend. Paul must travel to the most dangerous planet in the Universe to ensure 
+            the future of his family and his people. As forces battle for exclusive rights to the 
+            planet's most valuable resource - a precious fuel capable of unlocking humanity's greatest 
+            potential - only those who can conquer their fears will survive.</p>
+            <div class="movie-actions">
+                <a href="#" class="booking-btn">Booking</a>
+                <a class="trailer-btn" onclick="openTrailer('https://www.youtube.com/embed/8g18jFHCLXk')"><i class="fas fa-play"></i>Trailer</a>
+            </div>
+            <div class="movie-info">
+                <span class="rating"><i class="fas fa-star"></i> 8.5/10</span>
+                <span class="duration"><i class="far fa-clock"></i> 156 Minute</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2">
+        <img src="avatar.jpg" alt="Avatar Background" class="slide-bg">
+        <div class="slide-content">
+            <h1>AVATAR</h1>
+            <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. 
+            Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds 
+            to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through 
+            one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle 
+            for the survival of her world.</p>
+            <div class="movie-actions">
+                <a href="#" class="booking-btn">Booking</a>
+                <a class="trailer-btn" onclick="openTrailer('https://www.youtube.com/watch?v=gq2xKJXYZ80')"><i class="fas fa-play"></i>Trailer</a>
+            </div>
+            <div class="movie-info">
+                <span class="rating"><i class="fas fa-star"></i> 9/10</span>
+                <span class="duration"><i class="far fa-clock"></i> 195 Minute</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3">
+        <img src="intelar.jpg" alt="Interstellar Background" class="slide-bg">
+        <div class="slide-content">
+            <h1>INTERSTELLAR</h1>
+            <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, 
+            is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans. 
+            The mission takes them through a wormhole in search of a habitable planet in another galaxy, 
+            exploring the depths of space and time as they fight for humanity's survival.</p>
+            <div class="movie-actions">
+                <a href="#" class="booking-btn">Booking</a>
+                <a class="trailer-btn" onclick="openTrailer('https://www.youtube.com/watch?v=zSWdZVtXT7E')"><i class="fas fa-play"></i>Trailer</a>
+            </div>
+            <div class="movie-info">
+                <span class="rating"><i class="fas fa-star"></i> 9.7/10</span>
+                <span class="duration"><i class="far fa-clock"></i> 169 Minute</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 4 -->
+    <div class="slide" id="slide2">
+        <img src="avatar.jpg" alt="Avatar Background" class="slide-bg">
+        <div class="slide-content">
+            <h1>AVATAR</h1>
+            <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. 
+            Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds 
+            to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through 
+            one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle 
+            for the survival of her world.</p>
+            <div class="movie-actions">
+                <a href="#" class="booking-btn">Booking</a>
+                <a class="trailer-btn" onclick="openTrailer('https://www.youtube.com/watch?v=OiTiKOy59o4')"><i class="fas fa-play"></i>Trailer</a>
+            </div>
+            <div class="movie-info">
+                <span class="rating"><i class="fas fa-star"></i> 7.8/10</span>
+                <span class="duration"><i class="far fa-clock"></i> 162 Minute</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slide 5 -->
+    <div class="slide" id="slide3">
+        <img src="intelar.jpg" alt="Interstellar Background" class="slide-bg">
+        <div class="slide-content">
+            <h1>INTERSTELLAR</h1>
+            <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, 
+            is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans. 
+            The mission takes them through a wormhole in search of a habitable planet in another galaxy, 
+            exploring the depths of space and time as they fight for humanity's survival.</p>
+            <div class="movie-actions">
+                <a href="#" class="booking-btn">Booking</a>
+                <a href="#" class="trailer-btn"><i class="fas fa-play"></i> Trailer</a>
+            </div>
+            <div class="movie-info">
+                <span class="rating"><i class="fas fa-star"></i> 8.7/10</span>
+                <span class="duration"><i class="far fa-clock"></i> 169 Minute</span>
+            </div>
+        </div>
+    </div>
+
+<!-- Slide 6 -->
+<div class="slide" id="slide2">
+    <img src="avatar.jpg" alt="Avatar Background" class="slide-bg">
+    <div class="slide-content">
+        <h1>AVATAR</h1>
+        <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. 
+        Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds 
+        to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through 
+        one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle 
+        for the survival of her world.</p>
+        <div class="movie-actions">
+            <a href="#" class="booking-btn">Booking</a>
+            <a href="#" class="trailer-btn"><i class="fas fa-play"></i> Trailer</a>
+        </div>
+        <div class="movie-info">
+            <span class="rating"><i class="fas fa-star"></i> 7.8/10</span>
+            <span class="duration"><i class="far fa-clock"></i> 162 Minute</span>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 7 -->
+<div class="slide" id="slide3">
+    <img src="intelar.jpg" alt="Interstellar Background" class="slide-bg">
+    <div class="slide-content">
+        <h1>INTERSTELLAR</h1>
+        <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, 
+        is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans. 
+        The mission takes them through a wormhole in search of a habitable planet in another galaxy, 
+        exploring the depths of space and time as they fight for humanity's survival.</p>
+        <div class="movie-actions">
+            <a href="#" class="booking-btn">Booking</a>
+            <a href="#" class="trailer-btn"><i class="fas fa-play"></i> Trailer</a>
+        </div>
+        <div class="movie-info">
+            <span class="rating"><i class="fas fa-star"></i> 8.7/10</span>
+            <span class="duration"><i class="far fa-clock"></i> 169 Minute</span>
+        </div>
+    </div>
+</div>
+
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <a class="slider-prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="slider-next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+
+
+    <!-- Movie Filter Buttons -->
+    <div class="movie-filter">
+        <a href="#" class="filter-btn active">Now Showing</a>
+        <a href="#" class="filter-btn">Coming Soon</a>
+    </div>
+
+    <!-- Movie Carousel -->
+    <section class="movie-carousel">
+        <button class="carousel-arrow left"><i class="fas fa-chevron-left"></i></button>
+        
+        <div class="movie-container">
+            <div class="movie-card">
+                <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/2QKg5SZ_35I')">
+                    <img src="1.png" alt="Jumanji: Next Level">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="movie-title">JUMANJI NEXT LEVEL</div>
+            </div>            
+            <div class="movie-card">
+                <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/zSWdZVtXT7E')">
+                    <img src="2.png" alt="Interstellar">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="movie-title">INTERSTELLAR</div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/oMSdFM12hOw')">
+                    <img src="3.png" alt="The Northman">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+                <div class="movie-title">THE NORTHMAN</div>
+            </div>
+            <div class="movie-card">
+                    <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/5PSNL1qE6VY')">
+                    <img src="4.png" alt="Avatar">
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+                <div class="movie-title">AVATAR</div>
+            </div>
+            <div class="movie-card">
+                    <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/Fp9pNPdNwjI')">
+                    <img src="5.png" alt="Black Widow">
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+                <div class="movie-title">BLACK WIDOW</div>
+            </div>
+            <div class="movie-card">
+                    <div class="movie-image-container" onclick="openTrailer('https://www.youtube.com/embed/5PSNL1qE6VY')">
+                    <img src="6.png" alt="Mythica">
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+                <div class="movie-title">MYTHICA THE DARKSPORE</div>
+            </div>
+        </div>
+        
+        <button class="carousel-arrow right"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2 class="section-title">EVENT</h2>
+        <div class="events-container">
+            <div class="event-item large">
+                <img src="image 6.png" alt="Cinema Sunday">
+            </div>
+            <div class="event-item large">
+                <img src="image 5.png" alt="Movie Night">
+            </div>
+            <div class="event-item large">
+                <img src="image 4.png" alt="Movie Poster">
+            </div>
+            <div class="event-item medium">
+                <img src="image 7.png" alt="Tuesday Discount">
+            </div>
+        </div>
+    </section>
+    <!-- Trailer Modal -->
+<div class="trailer-modal" id="trailerModal">
+    <div class="trailer-container">
+        <div class="close-trailer" onclick="closeTrailer()">×</div>
+        <iframe id="trailerFrame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Theater Vietnam</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Terms and Conditions</h3>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Conditions of Website Use</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Payment Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Hotline : 1900 1090</a></li>
+                    <li><a href="#">Working hours: 8:00 - 22:00</a></li>
+                    <li><a href="#">Email support: hotdeal@cinema.vn</a></li>
+                </ul>
+                <!-- <div class="promotion-box">
+                    <img src="Cards 3.png" alt="Promotions">
+                    <h3>EXCLUSIVE PROMOTIONS</h3>
+                    <p>Enjoy exclusive promotions to your city supplied for CIX members.</p>
+                </div> -->
+            </div>
+            <div class="footer-column">
+                <h3>COMPANY CINEMA VIETNAM</h3>
+                <p>Cinema Company Limited. First time registered for the first time on 31/7/2008, registered for the 17th change on 15/8/2024.</p>
+                <p>Address: Floor 2, Bitexco Plaza, No. 2/36 Thành Thái street, Ward 14, District 10, HCMC, Vietnam 700</p>
+                <p>© 2024 COMPANY CINEMA VIETNAM. ALL RIGHTS RESERVED.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+/// comming soon movie
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all filter buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    // Create Coming Soon movies data
+    const comingSoonMovies = [
+        {
+            image: "coming-soon-1.png",
+            title: "DUNE: PART TWO",
+            trailerUrl: "https://www.youtube.com/embed/Way5bMZ-V90"
+        },
+        {
+            image: "coming-soo-2.png",
+            title: "DEADPOOL & WOLVERINE",
+            trailerUrl: "https://www.youtube.com/embed/gYrAj6MZ3ko"
+        },
+        {
+            image: "coming-soon-3.png",
+            title: "JOKER: FOLIE À DEUX",
+            trailerUrl: "https://www.youtube.com/embed/03ymBj144ng"
+        },
+        {
+            image: "coming-soon-4.png",
+            title: "FURIOSA",
+            trailerUrl: "https://www.youtube.com/embed/XdKzdjdOJyg"
+        },
+        {
+            image: "coming-soon-5.png",
+            title: "MISSION IMPOSSIBLE 8",
+            trailerUrl: "https://www.youtube.com/embed/avz06PDqDbM"
+        },
+        {
+            image: "coming-soon-6.png",
+            title: "THE BATMAN 2",
+            trailerUrl: "https://www.youtube.com/embed/mqqft2x_Aa4"
+        }
+    ];
+    
+    // Now playing movies data (your current movies)
+    const nowPlayingMovies = [
+        {
+            image: "1.png",
+            title: "JUMANJI NEXT LEVEL",
+            trailerUrl: "https://www.youtube.com/embed/2QKg5SZ_35I"
+        },
+        {
+            image: "2.png",
+            title: "INTERSTELLAR",
+            trailerUrl: "https://www.youtube.com/embed/zSWdZVtXT7E"
+        },
+        {
+            image: "3.png",
+            title: "THE NORTHMAN",
+            trailerUrl: "https://www.youtube.com/embed/oMSdFM12hOw"
+        },
+        {
+            image: "4.png",
+            title: "AVATAR",
+            trailerUrl: "https://www.youtube.com/embed/5PSNL1qE6VY"
+        },
+        {
+            image: "5.png",
+            title: "BLACK WIDOW",
+            trailerUrl: "https://www.youtube.com/embed/Fp9pNPdNwjI"
+        },
+        {
+            image: "6.png",
+            title: "MYTHICA THE DARKSPORE",
+            trailerUrl: "https://www.youtube.com/embed/5PSNL1qE6VY"
+        }
+    ];
+    
+    // Add click event to each filter button
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get the container to update
+            const movieContainer = document.querySelector('.movie-container');
+            
+            // Update content based on which button was clicked
+            if (this.textContent.trim() === 'Coming Soon') {
+                updateMovieContainer(movieContainer, comingSoonMovies);
+            } else {
+                updateMovieContainer(movieContainer, nowPlayingMovies);
+            }
+        });
+    });
+    
+    // Function to update movie container with new movies
+    function updateMovieContainer(container, movies) {
+        // Clear current content
+        container.innerHTML = '';
+        
+        // Add new movie cards
+        movies.forEach(movie => {
+            const movieCard = document.createElement('div');
+            movieCard.className = 'movie-card';
+            movieCard.innerHTML = `
+                <div class="movie-image-container" onclick="openTrailer('${movie.trailerUrl}')">
+                    <img src="${movie.image}" alt="${movie.title}">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="movie-title">${movie.title}</div>
+            `;
+            container.appendChild(movieCard);
+        });
+        
+        // Reinitialize carousel functionality if needed
+        initializeCarousel();
+    }
+    
+    // Initialize carousel functionality
+    function initializeCarousel() {
+        const container = document.querySelector('.movie-container');
+        const leftArrow = document.querySelector('.carousel-arrow.left');
+        const rightArrow = document.querySelector('.carousel-arrow.right');
+        
+        // Set scroll amount (adjust as needed)
+        const scrollAmount = 300;
+        
+        // Add click event for right arrow
+        rightArrow.addEventListener('click', function() {
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add click event for left arrow
+        leftArrow.addEventListener('click', function() {
+            container.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // Initialize carousel on page load
+    initializeCarousel();
+});
+
+    ///
+    function openTrailer(trailerUrl) {
+        document.getElementById('trailerFrame').src = trailerUrl;
+        document.getElementById('trailerModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    }
+    
+    function closeTrailer() {
+        document.getElementById('trailerFrame').src = '';
+        document.getElementById('trailerModal').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+    
+    // Close trailer modal when clicking outside the trailer
+    document.getElementById('trailerModal').addEventListener('click', function(event) {
+        if (event.target === this) {
+            closeTrailer();
+        }
+    });
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("slide");
+        const dots = document.getElementsByClassName("dot");
+        
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        
+        // Hide all slides
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        
+        // Remove active class from all dots
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        
+        // Show the current slide
+        slides[slideIndex-1].classList.add("active");
+        dots[slideIndex-1].classList.add("active");
+    }
+    
+    // Auto slide change every 5 seconds
+    // Uncomment this if you want auto-sliding
+    setInterval(() => {
+        plusSlides(1);
+    }, 5000);
+</script>
+</html>
